@@ -1,5 +1,7 @@
 PanSprezynka site, which presents viewers and chatters during streams on twitch.
 
+https://pansprezynka.netlify.app/
+
 Working on channels:
 
 - bonkol
