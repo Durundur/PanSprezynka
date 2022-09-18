@@ -1,10 +1,11 @@
-.chart{
+.chart {
     background-color: #28282e;
     padding: 30px;
     border-radius: 10px;
     margin: 20px 0 0 0;
 }
-.chart__channel{
+
+.chart__channel {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -13,21 +14,18 @@
     flex-wrap: wrap;
 }
 
-
-
-
-/* - */
-
-.channel__logo-name{
+.channel__logo-name {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.channel__name{
+
+.channel__name {
     margin: 10px;
 }
-.channel__logo{
+
+.channel__logo {
     width: 70px;
     height: 70px;
     border-radius: 100%;
@@ -35,18 +33,25 @@
     background-size: cover;
 }
 
-/* - */
-
-.chart__stream-time{
+.chart__stream-time {
     text-align: center;
 }
 
-/* - */
-
-.chart__stream-avg{
+.chart__stream-avg {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.custom-tooltip{
+    background-color: var(--grey-color);
+    color: var(--white-color);
+    padding: 10px;
+}
+.green-text{
+    color: var(--green-color);
+}
+.purple-text{
+    color: var(--purple-color);
+}
