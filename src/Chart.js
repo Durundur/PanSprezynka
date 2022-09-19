@@ -66,15 +66,13 @@ class Chart extends React.Component {
                         <span>Różnica: {this.avgViewers - this.avgChatters + ' (' + Math.round((this.avgViewers - this.avgChatters) / this.avgViewers * 100) + '%)'}</span>
                     </span>
                 </span>
-
-                <ResponsiveContainer minHeight="350px" >
+                <div className='chart__graph'>
+                <ResponsiveContainer height={'85%'} minHeight={'320px'} >
                     <LineChart
                         data={this.props.stats}
                         margin={{
                             top: 5,
-                            right: 30,
-                            left: 20,
-                            bottom: 5,
+                            left: -35
                         }
                         }>
                         <XAxis dataKey="time" tickFormatter={this.formatXAxis} stroke={'var(--white-color)'} />
@@ -85,6 +83,9 @@ class Chart extends React.Component {
                         <Line type="monotone" dataKey="currentChatters" legendType='circle' strokeWidth={3} name='Liczba chattersów' stroke={'var(--green-color)'} dot={false} activeDot={{ r: 6 }} />
                     </LineChart>
                 </ResponsiveContainer>
+
+                </div>
+                
             </div>
         )
     }
