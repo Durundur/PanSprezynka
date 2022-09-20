@@ -45,6 +45,9 @@ class TopBar extends React.Component {
                         <option>stazjaa</option>
                         <option>izakooo</option>
                         <option>losiugra</option>
+                        <option>nexos</option>
+                        <option>niklaus</option>
+                        <option>mamm0n</option>
                     </datalist>
                     <img className='search-icon' alt='wyszukaj' onClick={this.submitSearch} src={searchIcon}></img>
                 </span>

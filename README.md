@@ -20,3 +20,6 @@ Working on channels:
 - stazjaa
 - izakooo
 - losiugra
+- nexos
+- niklaus
+- mamm0n
