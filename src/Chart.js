@@ -72,7 +72,7 @@ class Chart extends React.Component {
                         data={this.props.stats}
                         margin={{
                             top: 5,
-                            left: -35
+                            right: 36.8,
                         }
                         }>
                         <XAxis dataKey="time" tickFormatter={this.formatXAxis} stroke={'var(--white-color)'} />
