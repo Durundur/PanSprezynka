@@ -23,6 +23,7 @@
 
 .channel__name {
     margin: 10px;
+    font-size: 1.1rem;
 }
 
 .channel__logo {
@@ -35,6 +36,7 @@
 
 .chart__stream-time {
     text-align: center;
+    font-size: .8rem;
 }
 
 .chart__stream-avg {

@@ -28,34 +28,9 @@ class TopBar extends React.Component {
             <div className="top-bar">
                 <span className='top-bar__input'>
                     <input className='search-input' onKeyDown={this.handelEnter} type={'text'} list={'streamers'} placeholder='Wyszukaj' value={this.state.searchInputVal} onChange={this.handleInputChange}></input>
-                    <datalist id="streamers">
-                        <option>bonkol</option>
-                        <option>kalach444</option>
-                        <option>kasix</option>
-                        <option>ewroon</option>
-                        <option>inet_saju</option>
-                        <option>spiralusgtm</option>
-                        <option>lewus</option>
-                        <option>summit1g</option>
-                        <option>rockalone</option>
-                        <option>urqueeen</option>
-                        <option>adamcy_</option>
-                        <option>h2p_gucio</option>
-                        <option>maailinh</option>
-                        <option>stazjaa</option>
-                        <option>izakooo</option>
-                        <option>losiugra</option>
-                        <option>nexos</option>
-                        <option>niklaus</option>
-                        <option>mamm0n</option>
-                    </datalist>
                     <img className='search-icon' alt='wyszukaj' onClick={this.submitSearch} src={searchIcon}></img>
                 </span>
                 <span className='top-bar__sort'>
-                    {/* <select onChange={this.handleSortChange} value={this.state.sortOrder}>
-                  <option value={'oldToNew'}>od najstarszych</option>
-                  <option value={'newToOld'}>od najnowszych</option>
-                </select> */}
                 </span>
             </div>
         )
