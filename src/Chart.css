@@ -8,9 +8,9 @@
 .chart__channel {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 0 30px 20px 30px;
     flex-wrap: wrap;
 }
 
@@ -19,11 +19,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
+.channel__additional-info{
+    display: flex;
+    flex-direction: column;
 
+}
 .channel__name {
-    margin: 10px;
     font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .channel__logo {
@@ -34,9 +39,9 @@
     background-size: cover;
 }
 
-.chart__stream-time {
-    text-align: center;
-    font-size: .8rem;
+.chart__stream-date {
+    font-size: .85rem;
+    color: #a7a7a7
 }
 
 .chart__stream-avg {
@@ -47,9 +52,18 @@
 }
 
 .custom-tooltip{
-    background-color: var(--grey-color);
+    background-color: var(--dark-grey-color2);
     color: var(--white-color);
-    padding: 10px;
+    padding: 8px;
+    font-size: .9rem;
+    border-radius: 10px;
+    
+}
+.custom-tooltip p{
+    margin-bottom: .5rem;
+}
+.custom-tooltip p:last-child{
+    margin-bottom: 0;
 }
 .green-text{
     color: var(--green-color);
@@ -70,7 +84,7 @@
 
 @media screen and (max-width: 1280px){
     
-  }
+}
   @media screen and (max-width: 1050px){
     
   }
@@ -82,4 +96,9 @@
         margin-top: 8px;
         margin-bottom: 8px;
     }
-  }
+}
+@media  screen and (max-width: 576px) {
+    .chart__stream-avg{
+        margin: auto;
+    }
+}

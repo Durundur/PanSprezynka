@@ -3,28 +3,19 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import TopBar from './TopBar';
 import ChartsList from './ChartsList';
-
-class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { searchInputVal: '' }
-    this.handleSearchSubmit = this.handleSearchSubmit.bind(this)
-  }
-
-  handleSearchSubmit(inputVal) {
-    this.setState({ searchInputVal: inputVal })
-  }
-
-
-  render() {
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path='/*' element={[<TopBar onSearchSubmit={this.handleSearchSubmit} />, <ChartsList query={this.state.searchInputVal} />]} />
-        </Routes>
-      </BrowserRouter>
-    )
-  }
+import NotFound from './NotFound';
+import About from './About'
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/lista' element={[<TopBar/>,<About/>]}/>
+        <Route path='/' element={[<TopBar/>,<ChartsList/>]}/>
+        <Route path='/:channelName' element={[<TopBar/>,<ChartsList/>]}/>
+        <Route path='*' element={[<TopBar/>,<NotFound/>]}/>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;
