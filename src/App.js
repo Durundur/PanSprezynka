@@ -8,8 +8,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-      <Route path='/' element={[<TopBar/>,<ChartsList/>]}></Route>
-      <Route path='/:channelName' element={[<TopBar/>,<ChartsList/>]}></Route>
+      <Route path='/' element={[<TopBar/>,<ChartsList/>]}>
+        <Route path='/:channelName' element={[<TopBar/>,<ChartsList/>]}>
+          <Route path='*' element={[<TopBar/>,<NotFound/>]}></Route>
+        </Route>
+      </Route>
       </Routes>
     </BrowserRouter>
   )
