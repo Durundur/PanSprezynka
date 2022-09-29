@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
       <Route path='/' element={[<TopBar/>,<ChartsList/>]}>
-        <Route path=':channelName' element={[<TopBar/>,<ChartsList/>]}>
+        <Route path='/:channelName' element={[<TopBar/>,<ChartsList/>]}>
           <Route path='*' element={[<TopBar/>,<NotFound/>]}></Route>
         </Route>
       </Route>
